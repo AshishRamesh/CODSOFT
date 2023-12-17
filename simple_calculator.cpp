@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    cout<<"# CALCULATER #"<<endl;
     int repeat_operation{0};
     do{
     int arthimeric_operation{0},n{0};
@@ -10,7 +11,9 @@ int main()
     cin>>arthimeric_operation;
     switch (arthimeric_operation)
     {
-    case 1: cout<<"Enter the number of values"<<endl;
+    case 1: system("cls");
+     cout<<"*********ADDITION**********"<<endl;
+     cout<<"Enter the number of values"<<endl;
     cin>>n;
     if (n<0)
     {
@@ -24,7 +27,9 @@ int main()
         }
         cout<<"addition: "<<addition<<endl;
         break;
-    case 2: cout<<"Enter the number of values"<<endl;
+    case 2:system("cls"); 
+    cout<<"*********SUBTRACTION**********"<<endl;
+    cout<<"Enter the number of values"<<endl;
     cin>>n;
     if(n<0){
         cout<<"Invalid input, the numbers of values should not be negative "<<endl;
@@ -38,7 +43,9 @@ int main()
     }
     cout<<"Subtraction: "<<subtract<<endl;
     break;
-    case 3:cout<<"Enter the number of values"<<endl;
+    case 3:system("cls");
+    cout<<"*********MULTIPLICATION**********"<<endl;
+    cout<<"Enter the number of values"<<endl;
     cin>>n;
     if(n<0){
         cout<<"Invalid input, the numbers of values should not be negative "<<endl;
@@ -50,7 +57,9 @@ int main()
     }
     cout<<"Multiplication: "<<multiplication<<endl; 
     break;
-    case 4: cout<<"Enter the numerator and denominator value"<<endl;
+    case 4:system("cls"); 
+    cout<<"*********DIVISIONṣ**********"<<endl;
+    cout<<"Enter the numerator and denominator value"<<endl;
     cin>>numerator>>denominator;
     try
     {
@@ -66,7 +75,8 @@ int main()
     }
     
     break;
-    default : cout<<"Invalid! input....."<<endl;
+    default : system("cls");
+    cout<<"Invalid! input....."<<endl;
     break;
     }
     cout<<"Do you want to continue the operartion? \n Press 1(yes) or Any key(no/exit)"<<endl;
